@@ -13,7 +13,7 @@ timezone: 'Singapore'
 
 # URL
 ## If your site is put in a subdirectory, set url as 'http://example.com/child' and root as '/child/'
-url: http://kyrogue.github.io/
+url: https://lotustechblog.com/
 root: /
 permalink: :year/:month/:day/:title/
 permalink_defaults:
