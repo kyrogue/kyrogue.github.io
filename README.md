@@ -1,10 +1,10 @@
 # Overview
 
-Tags:
+Available Tags:
 
 - aws,gcp
 
-Categories:
+Available Categories:
 
 - Cloud
 - Kubernetes
