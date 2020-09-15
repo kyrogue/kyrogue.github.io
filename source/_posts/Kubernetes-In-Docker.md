@@ -8,7 +8,7 @@ Recently, I switched from using minikube to [kind](https://kind.sigs.k8s.io/docs
 
 This is because kind creates the k8s cluster using the installed docker engine on your workstation, instead of minikube which virtualizes an entire VM.
 
-I was also able to quickly spin up a multi-node k8s cluster with 1 control plane node and 2 worker node, this was good for me to test multi-node scheduling behaviour, and stuff such as testing application behaviour when k8s reschedules a pod onto another node when performing [voluntary disruptions](https://kind.sigs.k8s.io/docs/user/quick-start/).
+I was also able to quickly spin up a multi-node k8s cluster with 1 control plane node and 2 worker node, this was good for me to test multi-node scheduling behaviour, and stuff such as testing application behaviour when k8s reschedules a pod onto another node when performing [voluntary disruptions](https://kubernetes.io/docs/concepts/workloads/pods/disruptions/#voluntary-and-involuntary-disruptions).
 
 The following sections demonstrates setting up a multi-node k8s cluster and mounting your workstation directory to the nodes
 
