@@ -1,7 +1,7 @@
 ---
 title: Kubernetes In Docker
 date: 2020-09-13 22:06:13
-tags: ["Docker","minikube","kind"]
+tags: ["docker","minikube","kind"]
 categories:
 - ["Tools"]
 ---
