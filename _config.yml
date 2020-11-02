@@ -3,8 +3,8 @@
 ## Source: https://github.com/hexojs/hexo/
 
 # Site
-title: ZQ - DevOps
-description: Blog about Software and DevOps related stuff!
+title: DevOps , Programming and Security
+description: Blog about DevOps , Programming and Security.
 keywords:
   - DevOps
   - AWS
@@ -27,7 +27,7 @@ pretty_urls:
 source_dir: source
 public_dir: public
 tag_dir: tags
-archive_dir: /
+archive_dir: archives
 category_dir: categories
 code_dir: downloads/code
 i18n_dir: :lang
@@ -64,7 +64,7 @@ prismjs:
 # per_page: Posts displayed per page. (0 = disable pagination)
 # order_by: Posts order. (Order by date descending by default)
 index_generator:
-  path: archives
+  path: ''
   per_page: 10
   order_by: -date
 
