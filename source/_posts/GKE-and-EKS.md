@@ -6,7 +6,7 @@ categories:
 - ["Cloud","Kubernetes"]
 ---
 Recently, I had the chance to upgrade AWS EKS with managed node group, and having worked with GCP GKE before, I came to a conclusion that GKE seems to be more matured overall.
-
+<!-- more -->
 A google search to validate my opinion yielded the following Reddit posts:
 
 - <https://www.reddit.com/r/googlecloud/comments/ejxxn5/has_anyone_done_a_thorough_diff_analysis_between/>

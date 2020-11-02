@@ -6,7 +6,7 @@ categories:
 - ["Learning","Articles"]
 ---
 Recently, I finished reading the article [Patterns for Managing Source Code Branches](https://martinfowler.com/articles/branching-patterns.html#FinalThoughtsAndRecommendations>) and was able to learn new stuff and provide another way for me to think on CI/CD related stuff.
-
+<!-- more -->
 The article did not touch much about Continuous Delivery/Deployment but on the patterns for managing source code branches.
 The important takeaway for me was:
 

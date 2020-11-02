@@ -82,7 +82,7 @@ meta_generator: true
 ## You can customize the date format as defined in
 ## http://momentjs.com/docs/#/displaying/format/
 date_format: YYYY-MM-DD
-time_format: HH:mm:ss
+time_format: hA
 ## updated_option supports 'mtime', 'date', 'empty'
 updated_option: 'date'
 
@@ -108,3 +108,16 @@ deploy:
   type: git
   repo: git@github.com:kyrogue/kyrogue.github.io.git
   branch: master
+
+sitemap:
+  path: sitemap.xml
+  template: ./sitemap_template.xml
+  rel: false
+  tags: true
+  categories: true
+
+search:
+  path: search.xml
+  field: post
+  content: true
+  format: html

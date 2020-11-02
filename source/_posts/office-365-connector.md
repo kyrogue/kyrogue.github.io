@@ -5,10 +5,10 @@ tags: ["tools"]
 categories:
 - ["Learning","Jenkins"]
 ---
-When moving from slack notifications to Microsoft Teams notifications for Jenkins, there was a few choices for the available plugin that can be used within Jenkins.
+Moving from slack notifications to Microsoft Teams notifications for Jenkins, there was a few choices for the available plugin that can be used within Jenkins.
 Generally, when looking at a Jenkins plugin to use, I would look at the health of the plugin in terms of whether it is actively maintained.
+<!-- more -->
 Eventually, settling on [office-365-connector-plugin](https://github.com/jenkinsci/office-365-connector-plugin).
-
 If we look at how the plugin is integrated with Microsoft Teams, it is via the use of microsoft [incoming webhooks](https://docs.microsoft.com/en-us/microsoftteams/platform/webhooks-and-connectors/how-to/add-incoming-webhook) . This is a very simple and easy to get going integration, however it is not very secure in terms of confidentiality of the webhook URL, as anyone with the webhook URL could potentially post a webhook to your Microsoft teams channel.
 
 If we look at the example given in the [github page](https://github.com/jenkinsci/office-365-connector-plugin#pipeline-step) , we can see that the example exposes the webhook URL when using it.
