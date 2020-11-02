@@ -74,14 +74,42 @@
   </url>
   
   <url>
-    <loc>https://lotustechblog.com/tags/learning/</loc>
+    <loc>https://lotustechblog.com/tags/k8s/</loc>
     <lastmod>2020-11-02</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
-    <loc>https://lotustechblog.com/tags/tools/</loc>
+    <loc>https://lotustechblog.com/tags/Docker/</loc>
+    <lastmod>2020-11-02</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://lotustechblog.com/tags/kind/</loc>
+    <lastmod>2020-11-02</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://lotustechblog.com/tags/minikube/</loc>
+    <lastmod>2020-11-02</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://lotustechblog.com/tags/jenkins/</loc>
+    <lastmod>2020-11-02</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://lotustechblog.com/tags/ci-cd/</loc>
     <lastmod>2020-11-02</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
@@ -104,21 +132,7 @@
   </url>
   
   <url>
-    <loc>https://lotustechblog.com/categories/Cloud/Kubernetes/</loc>
-    <lastmod>2020-11-02</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://lotustechblog.com/categories/Learning/Articles/</loc>
-    <lastmod>2020-11-02</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://lotustechblog.com/categories/Learning/Jenkins/</loc>
+    <loc>https://lotustechblog.com/categories/Tools/</loc>
     <lastmod>2020-11-02</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
