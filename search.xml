@@ -38,25 +38,6 @@
       </tags>
   </entry>
   <entry>
-    <title>Patterns for Managing Source Code Branches</title>
-    <url>/2020/09/07/Patterns-for-Managing-Source-Code-Branches/</url>
-    <content><![CDATA[<p>Recently, I finished reading the article <span class="exturl" data-url="aHR0cHM6Ly9tYXJ0aW5mb3dsZXIuY29tL2FydGljbGVzL2JyYW5jaGluZy1wYXR0ZXJucy5odG1sI0ZpbmFsVGhvdWdodHNBbmRSZWNvbW1lbmRhdGlvbnMlM0U=">Patterns for Managing Source Code Branches<i class="fa fa-external-link-alt"></i></span> and was able to learn new stuff and provide another way for me to think on CI/CD related stuff.</p>
-<a id="more"></a>
-<p>The article did not touch much about Continuous Delivery/Deployment but on the patterns for managing source code branches.<br>The important takeaway for me was:</p>
-<ul>
-<li>there is no straightforward pattern that can fit your team or your product. We can however make tweaks to the branching model with patterns such as <em>maturity branches</em> , <em>experimental branches</em> etc…</li>
-<li>attempting to force a pattern meant for a single release in production onto a multiple release in production product can be confusing and increase complexity.</li>
-<li>we should look at ways to reduce <span class="exturl" data-url="aHR0cHM6Ly9tYXJ0aW5mb3dsZXIuY29tL2FydGljbGVzL2JyYW5jaGluZy1wYXR0ZXJucy5odG1sI2ludGVncmF0aW9uLWZyaWN0aW9u">Integration Friction<i class="fa fa-external-link-alt"></i></span> and in the process strive to achieve <span class="exturl" data-url="aHR0cHM6Ly9tYXJ0aW5mb3dsZXIuY29tL2FydGljbGVzL2JyYW5jaGluZy1wYXR0ZXJucy5odG1sI0hpZ2gtZnJlcXVlbmN5SW50ZWdyYXRpb24=">High-Frequency Integration<i class="fa fa-external-link-alt"></i></span></li>
-</ul>
-]]></content>
-      <categories>
-        <category>Learning</category>
-      </categories>
-      <tags>
-        <tag>ci/cd</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>Kubernetes In Docker</title>
     <url>/2020/09/13/Kubernetes-In-Docker/</url>
     <content><![CDATA[<p>Recently, I switched from using minikube to <span class="exturl" data-url="aHR0cHM6Ly9raW5kLnNpZ3MuazhzLmlvL2RvY3MvdXNlci9xdWljay1zdGFydC8=">kind<i class="fa fa-external-link-alt"></i></span>, kind is much more lightweight compared to using minikube for spinning up a local kubernetes cluster for testing purposes.</p>
@@ -78,6 +59,25 @@
         <tag>docker</tag>
         <tag>minikube</tag>
         <tag>kind</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Patterns for Managing Source Code Branches</title>
+    <url>/2020/09/07/Patterns-for-Managing-Source-Code-Branches/</url>
+    <content><![CDATA[<p>Recently, I finished reading the article <span class="exturl" data-url="aHR0cHM6Ly9tYXJ0aW5mb3dsZXIuY29tL2FydGljbGVzL2JyYW5jaGluZy1wYXR0ZXJucy5odG1sI0ZpbmFsVGhvdWdodHNBbmRSZWNvbW1lbmRhdGlvbnMlM0U=">Patterns for Managing Source Code Branches<i class="fa fa-external-link-alt"></i></span> and was able to learn new stuff and provide another way for me to think on CI/CD related stuff.</p>
+<a id="more"></a>
+<p>The article did not touch much about Continuous Delivery/Deployment but on the patterns for managing source code branches.<br>The important takeaway for me was:</p>
+<ul>
+<li>there is no straightforward pattern that can fit your team or your product. We can however make tweaks to the branching model with patterns such as <em>maturity branches</em> , <em>experimental branches</em> etc…</li>
+<li>attempting to force a pattern meant for a single release in production onto a multiple release in production product can be confusing and increase complexity.</li>
+<li>we should look at ways to reduce <span class="exturl" data-url="aHR0cHM6Ly9tYXJ0aW5mb3dsZXIuY29tL2FydGljbGVzL2JyYW5jaGluZy1wYXR0ZXJucy5odG1sI2ludGVncmF0aW9uLWZyaWN0aW9u">Integration Friction<i class="fa fa-external-link-alt"></i></span> and in the process strive to achieve <span class="exturl" data-url="aHR0cHM6Ly9tYXJ0aW5mb3dsZXIuY29tL2FydGljbGVzL2JyYW5jaGluZy1wYXR0ZXJucy5odG1sI0hpZ2gtZnJlcXVlbmN5SW50ZWdyYXRpb24=">High-Frequency Integration<i class="fa fa-external-link-alt"></i></span></li>
+</ul>
+]]></content>
+      <categories>
+        <category>Learning</category>
+      </categories>
+      <tags>
+        <tag>ci/cd</tag>
       </tags>
   </entry>
   <entry>
