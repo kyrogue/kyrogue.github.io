@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  
+  <url>
+    <loc>https://lotustechblog.com/about/index.html</loc>
+    
+    <lastmod>2020-11-02</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://lotustechblog.com/categories/index.html</loc>
+    
+    <lastmod>2020-11-02</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://lotustechblog.com/tags/index.html</loc>
+    
+    <lastmod>2020-11-02</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://lotustechblog.com/2020/10/04/office-365-connector/</loc>
+    
+    <lastmod>2020-10-04</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://lotustechblog.com/2020/09/13/Kubernetes-In-Docker/</loc>
+    
+    <lastmod>2020-09-13</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://lotustechblog.com/2020/09/07/Patterns-for-Managing-Source-Code-Branches/</loc>
+    
+    <lastmod>2020-09-07</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://lotustechblog.com/2020/09/07/GKE-and-EKS/</loc>
+    
+    <lastmod>2020-09-07</lastmod>
+    
+  </url>
+  
+
+  <url>
+    <loc>https://lotustechblog.com/</loc>
+    <lastmod>2020-11-02</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>1.0</priority>
+  </url>
+
+  
+  <url>
+    <loc>https://lotustechblog.com/tags/aws/</loc>
+    <lastmod>2020-11-02</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://lotustechblog.com/tags/gcp/</loc>
+    <lastmod>2020-11-02</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://lotustechblog.com/tags/learning/</loc>
+    <lastmod>2020-11-02</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://lotustechblog.com/tags/tools/</loc>
+    <lastmod>2020-11-02</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+
+  
+  <url>
+    <loc>https://lotustechblog.com/categories/Cloud/</loc>
+    <lastmod>2020-11-02</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://lotustechblog.com/categories/Learning/</loc>
+    <lastmod>2020-11-02</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://lotustechblog.com/categories/Cloud/Kubernetes/</loc>
+    <lastmod>2020-11-02</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://lotustechblog.com/categories/Learning/Articles/</loc>
+    <lastmod>2020-11-02</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://lotustechblog.com/categories/Learning/Jenkins/</loc>
+    <lastmod>2020-11-02</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+</urlset>

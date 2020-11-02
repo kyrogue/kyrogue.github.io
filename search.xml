@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<search>
+  <entry>
+    <title>GKE and EKS</title>
+    <url>/2020/09/07/GKE-and-EKS/</url>
+    <content><![CDATA[<p>Recently, I had the chance to upgrade AWS EKS with managed node group, and having worked with GCP GKE before, I came to a conclusion that GKE seems to be more matured overall.</p>
+<a id="more"></a>
+<p>A google search to validate my opinion yielded the following Reddit posts:</p>
+<ul>
+<li><span class="exturl" data-url="aHR0cHM6Ly93d3cucmVkZGl0LmNvbS9yL2dvb2dsZWNsb3VkL2NvbW1lbnRzL2VqeHhuNS9oYXNfYW55b25lX2RvbmVfYV90aG9yb3VnaF9kaWZmX2FuYWx5c2lzX2JldHdlZW4v">https://www.reddit.com/r/googlecloud/comments/ejxxn5/has_anyone_done_a_thorough_diff_analysis_between/<i class="fa fa-external-link-alt"></i></span></li>
+<li><span class="exturl" data-url="aHR0cHM6Ly93d3cucmVkZGl0LmNvbS9yL2t1YmVybmV0ZXMvY29tbWVudHMvOXFnMXd6L2hvd19nb29kX2lzX2Vrc192c19nY2Uv">https://www.reddit.com/r/kubernetes/comments/9qg1wz/how_good_is_eks_vs_gce/<i class="fa fa-external-link-alt"></i></span></li>
+</ul>
+<p>A quick look through the comments and we can identify that most users have a more positive experience with GKE.</p>
+<p>From my experience, i had the following peeves about AWS EKS:</p>
+<ul>
+<li>we need to maintain add-ons installation and upgrade on the cluster, by add-ons i mean stuff like cluster-autoscaler, kube-proxy, kube-dns… etc<ul>
+<li>this took the managed experience out of AWS EKS.</li>
+</ul>
+</li>
+<li>we have no way to configure the way AWS surges node when performing node eviction, this is directly comparing to <span class="exturl" data-url="aHR0cHM6Ly9jbG91ZC5nb29nbGUuY29tL2t1YmVybmV0ZXMtZW5naW5lL2RvY3MvY29uY2VwdHMvY2x1c3Rlci11cGdyYWRlcyNzdXJnZQ==">https://cloud.google.com/kubernetes-engine/docs/concepts/cluster-upgrades#surge<i class="fa fa-external-link-alt"></i></span><ul>
+<li>there can be situations whereby AWS can overprovision nodes, increasing the amount of time it takes for an upgrade to complete.</li>
+</ul>
+</li>
+<li>the aws documentation on the update behaviour is at a bare minimum, we do not have an idea of what are the conditions during the upgrade that can cause failure<ul>
+<li>comparing <span class="exturl" data-url="aHR0cHM6Ly9jbG91ZC5nb29nbGUuY29tL2t1YmVybmV0ZXMtZW5naW5lL2RvY3MvY29uY2VwdHMvY2x1c3Rlci11cGdyYWRlcyNub2RlX3Bvb2xfdXBncmFkZXM=">https://cloud.google.com/kubernetes-engine/docs/concepts/cluster-upgrades#node_pool_upgrades<i class="fa fa-external-link-alt"></i></span> to <span class="exturl" data-url="aHR0cHM6Ly9kb2NzLmF3cy5hbWF6b24uY29tL2Vrcy9sYXRlc3QvdXNlcmd1aWRlL21hbmFnZWQtbm9kZS11cGRhdGUtYmVoYXZpb3IuaHRtbA==">https://docs.aws.amazon.com/eks/latest/userguide/managed-node-update-behavior.html<i class="fa fa-external-link-alt"></i></span></li>
+</ul>
+</li>
+<li>there are additional initial setup that needs to be done during creation of a cluster to get to a good working state, whereas GKE normally provides these setups in terms of cluster configurations through flags.</li>
+</ul>
+]]></content>
+      <categories>
+        <category>Cloud</category>
+        <category>Kubernetes</category>
+      </categories>
+      <tags>
+        <tag>aws</tag>
+        <tag>gcp</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Patterns for Managing Source Code Branches</title>
+    <url>/2020/09/07/Patterns-for-Managing-Source-Code-Branches/</url>
+    <content><![CDATA[<p>Recently, I finished reading the article <span class="exturl" data-url="aHR0cHM6Ly9tYXJ0aW5mb3dsZXIuY29tL2FydGljbGVzL2JyYW5jaGluZy1wYXR0ZXJucy5odG1sI0ZpbmFsVGhvdWdodHNBbmRSZWNvbW1lbmRhdGlvbnMlM0U=">Patterns for Managing Source Code Branches<i class="fa fa-external-link-alt"></i></span> and was able to learn new stuff and provide another way for me to think on CI/CD related stuff.</p>
+<a id="more"></a>
+<p>The article did not touch much about Continuous Delivery/Deployment but on the patterns for managing source code branches.<br>The important takeaway for me was:</p>
+<ul>
+<li>there is no straightforward pattern that can fit your team or your product. We can however make tweaks to the branching model with patterns such as <em>maturity branches</em> , <em>experimental branches</em> etc…</li>
+<li>attempting to force a pattern meant for a single release in production onto a multiple release in production product can be confusing and increase complexity.</li>
+<li>we should look at ways to reduce <span class="exturl" data-url="aHR0cHM6Ly9tYXJ0aW5mb3dsZXIuY29tL2FydGljbGVzL2JyYW5jaGluZy1wYXR0ZXJucy5odG1sI2ludGVncmF0aW9uLWZyaWN0aW9u">Integration Friction<i class="fa fa-external-link-alt"></i></span> and in the process strive to achieve <span class="exturl" data-url="aHR0cHM6Ly9tYXJ0aW5mb3dsZXIuY29tL2FydGljbGVzL2JyYW5jaGluZy1wYXR0ZXJucy5odG1sI0hpZ2gtZnJlcXVlbmN5SW50ZWdyYXRpb24=">High-Frequency Integration<i class="fa fa-external-link-alt"></i></span></li>
+</ul>
+]]></content>
+      <categories>
+        <category>Learning</category>
+        <category>Articles</category>
+      </categories>
+      <tags>
+        <tag>learning</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Kubernetes In Docker</title>
+    <url>/2020/09/13/Kubernetes-In-Docker/</url>
+    <content><![CDATA[<p>Recently, I switched from using minikube to <span class="exturl" data-url="aHR0cHM6Ly9raW5kLnNpZ3MuazhzLmlvL2RvY3MvdXNlci9xdWljay1zdGFydC8=">kind<i class="fa fa-external-link-alt"></i></span>, kind is much more lightweight compared to using minikube for spinning up a local kubernetes cluster for testing purposes.</p>
+<a id="more"></a>
+<p>This is because kind creates the k8s cluster using the installed docker engine on your workstation, instead of minikube which virtualizes an entire VM.</p>
+<p>I was also able to quickly spin up a multi-node k8s cluster with 1 control plane node and 2 worker node, this was good for me to test multi-node scheduling behaviour, and stuff such as testing application behaviour when k8s reschedules a pod onto another node when performing <span class="exturl" data-url="aHR0cHM6Ly9rdWJlcm5ldGVzLmlvL2RvY3MvY29uY2VwdHMvd29ya2xvYWRzL3BvZHMvZGlzcnVwdGlvbnMvI3ZvbHVudGFyeS1hbmQtaW52b2x1bnRhcnktZGlzcnVwdGlvbnM=">voluntary disruptions<i class="fa fa-external-link-alt"></i></span>.</p>
+<p>The following sections demonstrates setting up a multi-node k8s cluster and mounting your workstation directory to the nodes</p>
+<p>Create a cluster config yaml file, to be used when creating the cluster:</p>
+<figure class="highlight plain"><figcaption><span>cluster-config.yaml</span></figcaption><table><tr><td class="code"><pre><span class="line">kind: Cluster</span><br><span class="line">apiVersion: kind.x-k8s.io&#x2F;v1alpha4</span><br><span class="line">nodes:</span><br><span class="line">- role: control-plane</span><br><span class="line">- role: worker</span><br><span class="line">  extraMounts:</span><br><span class="line">  - hostPath: &#x2F;path&#x2F;to&#x2F;my&#x2F;files&#x2F;</span><br><span class="line">    containerPath: &#x2F;files</span><br><span class="line">- role: worker</span><br><span class="line">  extraMounts:</span><br><span class="line">  - hostPath: &#x2F;path&#x2F;to&#x2F;my&#x2F;files&#x2F;</span><br><span class="line">    containerPath: &#x2F;files</span><br></pre></td></tr></table></figure>
+
+<p>We can then use the <code>kind</code> command, along with providing the cluster to be using v1.16 of k8s:</p>
+<p><code>kind create cluster --config cluster-config.yaml --image kindest/node:v1.16.9</code></p>
+<p>To use the mounted volume on your k8s pods, we would then use <span class="exturl" data-url="aHR0cHM6Ly9rdWJlcm5ldGVzLmlvL2RvY3MvY29uY2VwdHMvc3RvcmFnZS92b2x1bWVzLyNob3N0cGF0aA==">hostPath<i class="fa fa-external-link-alt"></i></span> volumes and attach it to your pod.</p>
+]]></content>
+      <tags>
+        <tag>tools</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Jenkins Office 365 Connector Plugin</title>
+    <url>/2020/10/04/office-365-connector/</url>
+    <content><![CDATA[<p>Moving from slack notifications to Microsoft Teams notifications for Jenkins, there was a few choices for the available plugin that can be used within Jenkins.<br>Generally, when looking at a Jenkins plugin to use, I would look at the health of the plugin in terms of whether it is actively maintained.</p>
+<a id="more"></a>
+<p>Eventually, settling on <span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL2plbmtpbnNjaS9vZmZpY2UtMzY1LWNvbm5lY3Rvci1wbHVnaW4=">office-365-connector-plugin<i class="fa fa-external-link-alt"></i></span>.<br>If we look at how the plugin is integrated with Microsoft Teams, it is via the use of microsoft <span class="exturl" data-url="aHR0cHM6Ly9kb2NzLm1pY3Jvc29mdC5jb20vZW4tdXMvbWljcm9zb2Z0dGVhbXMvcGxhdGZvcm0vd2ViaG9va3MtYW5kLWNvbm5lY3RvcnMvaG93LXRvL2FkZC1pbmNvbWluZy13ZWJob29r">incoming webhooks<i class="fa fa-external-link-alt"></i></span> . This is a very simple and easy to get going integration, however it is not very secure in terms of confidentiality of the webhook URL, as anyone with the webhook URL could potentially post a webhook to your Microsoft teams channel.</p>
+<p>If we look at the example given in the <span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL2plbmtpbnNjaS9vZmZpY2UtMzY1LWNvbm5lY3Rvci1wbHVnaW4jcGlwZWxpbmUtc3RlcA==">github page<i class="fa fa-external-link-alt"></i></span> , we can see that the example exposes the webhook URL when using it.<br>A better way would be to make use of Jenkins pipeline environment variables and using a text credential to store the webhook url.</p>
+<p>Globally scoped environment, whereby the environment block is defined outside the <code>stages</code> block:</p>
+<figure class="highlight plain"><figcaption><span>Jenkinsfile</span></figcaption><table><tr><td class="code"><pre><span class="line">pipeline &#123;</span><br><span class="line">    ...</span><br><span class="line">    environment &#123;</span><br><span class="line">        WEBHOOK_URL     &#x3D; credentials(&#39;jenkins-text-id&#39;)</span><br><span class="line">    &#125;</span><br><span class="line">    stages &#123;</span><br><span class="line">        stage(&#39;Example stage 1&#39;) &#123;</span><br><span class="line">            steps &#123;</span><br><span class="line">              office365ConnectorSend webhookUrl: &quot;$WEBHOOK_URL&quot;,message: &#39;Application has been [deployed](https:&#x2F;&#x2F;uat.green.biz)&#39;,status: &#39;Success&#39;</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>Stage scoped environment, whereby the environment block is defined within the <code>stage</code> block:</p>
+<figure class="highlight plain"><figcaption><span>Jenkinsfile</span></figcaption><table><tr><td class="code"><pre><span class="line">pipeline &#123;</span><br><span class="line">    ...</span><br><span class="line">    stages &#123;</span><br><span class="line">        stage(&#39;Example stage 1&#39;) &#123;</span><br><span class="line">          environment &#123;</span><br><span class="line">              WEBHOOK_URL     &#x3D; credentials(&#39;jenkins-text-id&#39;)</span><br><span class="line">          &#125;</span><br><span class="line">          steps &#123;</span><br><span class="line">            office365ConnectorSend webhookUrl: &quot;$WEBHOOK_URL&quot;,message: &#39;Application has been [deployed](https:&#x2F;&#x2F;uat.green.biz)&#39;,status: &#39;Success&#39;</span><br><span class="line">          &#125;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+]]></content>
+      <categories>
+        <category>Learning</category>
+        <category>Jenkins</category>
+      </categories>
+      <tags>
+        <tag>tools</tag>
+      </tags>
+  </entry>
+</search>
