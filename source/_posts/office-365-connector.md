@@ -1,9 +1,9 @@
 ---
 title: Jenkins Office 365 Connector Plugin
 date: 2020-10-04 21:16:25
-tags: ["tools"]
+tags: ["jenkins"]
 categories:
-- ["Learning","Jenkins"]
+- ["Learning"]
 ---
 Moving from slack notifications to Microsoft Teams notifications for Jenkins, there was a few choices for the available plugin that can be used within Jenkins.
 Generally, when looking at a Jenkins plugin to use, I would look at the health of the plugin in terms of whether it is actively maintained.

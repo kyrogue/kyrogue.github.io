@@ -1,9 +1,9 @@
 ---
 title: GKE and EKS
 date: 2020-09-07 19:41:34
-tags: ["aws","gcp"]
+tags: ["aws","gcp","k8s"]
 categories:
-- ["Cloud","Kubernetes"]
+- ["Cloud"]
 ---
 Recently, I had the chance to upgrade AWS EKS with managed node group, and having worked with GCP GKE before, I came to a conclusion that GKE seems to be more matured overall.
 <!-- more -->

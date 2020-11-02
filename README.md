@@ -2,9 +2,10 @@
 
 Available Tags:
 
-- aws,gcp
+- aws, gcp, jenkins, k8s, ci/cd
 
 Available Categories:
 
 - Cloud
-- Kubernetes
+- Tools
+- Learning

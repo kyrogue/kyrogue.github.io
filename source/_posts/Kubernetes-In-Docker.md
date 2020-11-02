@@ -1,8 +1,9 @@
 ---
 title: Kubernetes In Docker
 date: 2020-09-13 22:06:13
-tags: ["tools"]
+tags: ["Docker","minikube","kind"]
 categories:
+- ["Tools"]
 ---
 Recently, I switched from using minikube to [kind](https://kind.sigs.k8s.io/docs/user/quick-start/), kind is much more lightweight compared to using minikube for spinning up a local kubernetes cluster for testing purposes.
 <!-- more -->

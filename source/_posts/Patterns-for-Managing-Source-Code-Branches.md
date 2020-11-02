@@ -1,9 +1,9 @@
 ---
 title: Patterns for Managing Source Code Branches
 date: 2020-09-07 20:13:11
-tags: ["learning"]
+tags: ["ci/cd"]
 categories:
-- ["Learning","Articles"]
+- ["Learning"]
 ---
 Recently, I finished reading the article [Patterns for Managing Source Code Branches](https://martinfowler.com/articles/branching-patterns.html#FinalThoughtsAndRecommendations>) and was able to learn new stuff and provide another way for me to think on CI/CD related stuff.
 <!-- more -->
