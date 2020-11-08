@@ -88,6 +88,13 @@
   </url>
   
   <url>
+    <loc>https://lotustechblog.com/tags/docker/</loc>
+    <lastmod>2020-11-08</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>https://lotustechblog.com/tags/minikube/</loc>
     <lastmod>2020-11-08</lastmod>
     <changefreq>daily</changefreq>
