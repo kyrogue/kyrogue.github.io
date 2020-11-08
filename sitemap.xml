@@ -88,13 +88,6 @@
   </url>
   
   <url>
-    <loc>https://lotustechblog.com/tags/docker/</loc>
-    <lastmod>2020-11-08</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
     <loc>https://lotustechblog.com/tags/minikube/</loc>
     <lastmod>2020-11-08</lastmod>
     <changefreq>daily</changefreq>
@@ -118,21 +111,21 @@
 
   
   <url>
-    <loc>https://lotustechblog.com/categories/cloud/</loc>
+    <loc>https://lotustechblog.com/categories/Cloud/</loc>
     <lastmod>2020-11-08</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
-    <loc>https://lotustechblog.com/categories/learning/</loc>
+    <loc>https://lotustechblog.com/categories/Learning/</loc>
     <lastmod>2020-11-08</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
-    <loc>https://lotustechblog.com/categories/tools/</loc>
+    <loc>https://lotustechblog.com/categories/Tools/</loc>
     <lastmod>2020-11-08</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>

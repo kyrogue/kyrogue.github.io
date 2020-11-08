@@ -75,7 +75,6 @@
         <category>Tools</category>
       </categories>
       <tags>
-        <tag>docker</tag>
         <tag>minikube</tag>
         <tag>kind</tag>
       </tags>
