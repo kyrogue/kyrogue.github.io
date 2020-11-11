@@ -53,7 +53,7 @@
 
   <url>
     <loc>https://lotustechblog.com/</loc>
-    <lastmod>2020-11-08</lastmod>
+    <lastmod>2020-11-11</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
   </url>
@@ -61,56 +61,56 @@
   
   <url>
     <loc>https://lotustechblog.com/tags/aws/</loc>
-    <lastmod>2020-11-08</lastmod>
+    <lastmod>2020-11-11</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>https://lotustechblog.com/tags/gcp/</loc>
-    <lastmod>2020-11-08</lastmod>
+    <lastmod>2020-11-11</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>https://lotustechblog.com/tags/k8s/</loc>
-    <lastmod>2020-11-08</lastmod>
+    <lastmod>2020-11-11</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>https://lotustechblog.com/tags/ci-cd/</loc>
-    <lastmod>2020-11-08</lastmod>
+    <lastmod>2020-11-11</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>https://lotustechblog.com/tags/docker/</loc>
-    <lastmod>2020-11-08</lastmod>
+    <lastmod>2020-11-11</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>https://lotustechblog.com/tags/minikube/</loc>
-    <lastmod>2020-11-08</lastmod>
+    <lastmod>2020-11-11</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>https://lotustechblog.com/tags/kind/</loc>
-    <lastmod>2020-11-08</lastmod>
+    <lastmod>2020-11-11</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>https://lotustechblog.com/tags/jenkins/</loc>
-    <lastmod>2020-11-08</lastmod>
+    <lastmod>2020-11-11</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
@@ -119,21 +119,21 @@
   
   <url>
     <loc>https://lotustechblog.com/categories/Cloud/</loc>
-    <lastmod>2020-11-08</lastmod>
+    <lastmod>2020-11-11</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>https://lotustechblog.com/categories/Learning/</loc>
-    <lastmod>2020-11-08</lastmod>
+    <lastmod>2020-11-11</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>https://lotustechblog.com/categories/Tools/</loc>
-    <lastmod>2020-11-08</lastmod>
+    <lastmod>2020-11-11</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
